@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/properties/layout,_N_T_/properties/[slug]/layout,_N_T_/properties/[slug]/page,_N_T_/properties/heritage-haveli-jaipur"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/properties/$d$slug/__PAGE__",
+    "/properties/$d$slug",
+    "/properties",
+    "/_index",
+    "/_head"
+  ]
+}

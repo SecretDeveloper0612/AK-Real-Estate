@@ -1,0 +1,9 @@
+:HL["/_next/static/chunks/d8e14b76c7770c40.css","style"]
+:HL["/_next/static/chunks/8791a4fbb6c271be.css","style"]
+:HL["/_next/static/media/2a65768255d6b625-s.p.d19752fb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/placeholder.svg?height=60&width=60","image"]
+:HL["https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop","image"]
+:HL["https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop","image"]
+:HL["https://images.unsplash.com/photo-1600596542815-60c37c6525fa?q=80&w=2076&auto=format&fit=crop","image"]
+0:{"buildId":"N13k8R6DAr_VnaTZRK3Te","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"properties","paramType":null,"paramKey":"properties","hasRuntimePrefetch":false,"slots":{"children":{"name":"slug","paramType":"d","paramKey":"tech-park-apartment-bangalore","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
