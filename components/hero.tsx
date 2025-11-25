@@ -30,26 +30,36 @@ export function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-[5.5rem] font-serif text-white leading-[1.1] md:leading-[1.05] mb-6 md:mb-8 animate-fade-up-delay-1 drop-shadow-lg">
-            <span className="italic font-light text-neutral-200 block mb-2">Exquisite Living</span>
+            <span className="italic font-light text-neutral-200 block mb-2">
+              Exquisite Living
+            </span>
             <span className="font-medium block">Where Luxury</span>
-            <span className="font-medium block text-white/90">Meets Legacy</span>
+            <span className="font-medium block text-white/90">
+              Meets Legacy
+            </span>
           </h1>
 
           <p className="text-base md:text-xl text-neutral-200 mb-8 md:mb-12 max-w-xl leading-relaxed font-light animate-fade-up-delay-2 drop-shadow-md">
-            Discover a curated collection of the world's most extraordinary homes. 
-            Designed for those who seek the exceptional.
+            Discover a curated collection of the world's most extraordinary
+            homes. Designed for those who seek the exceptional.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-6 animate-fade-up-delay-2">
-            <Link href="/properties" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-neutral-950 rounded-full text-sm font-medium hover:bg-neutral-200 transition-all duration-300 group w-full sm:w-auto">
+            <Link
+              href="/properties"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-neutral-950 rounded-full text-sm font-medium hover:bg-neutral-200 transition-all duration-300 group w-full sm:w-auto"
+            >
               Explore Collection
               <ArrowUpRight
                 size={16}
                 className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
               />
             </Link>
-            
-            <Link href="/contact" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white/10 text-white border border-white/20 rounded-full text-sm font-medium hover:bg-white/20 transition-all duration-300 backdrop-blur-sm w-full sm:w-auto">
+
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white/10 text-white border border-white/20 rounded-full text-sm font-medium hover:bg-white/20 transition-all duration-300 backdrop-blur-sm w-full sm:w-auto"
+            >
               Book a Private Tour
             </Link>
           </div>
@@ -57,7 +67,9 @@ export function Hero() {
       </div>
 
       <div className="absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 animate-fade-in">
-        <span className="text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-neutral-400 font-medium">Scroll</span>
+        <span className="text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-neutral-400 font-medium">
+          Scroll
+        </span>
         <div className="w-px h-8 md:h-12 bg-linear-to-b from-neutral-400 to-transparent" />
       </div>
     </section>

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/about", label: "About" },
@@ -38,7 +39,7 @@ export function Navbar() {
           href="/"
           className="text-2xl font-serif font-bold text-white tracking-tight hover:opacity-80 transition-opacity duration-300"
         >
-          LuxeLiving
+          <Image src="/logo.png" alt="LuxeLiving Logo" width={48} height={48} />
         </Link>
 
         {/* Desktop Navigation */}
