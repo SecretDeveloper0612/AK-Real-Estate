@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { InnerNavbar } from "@/components/inner-navbar";
 import { Footer } from "@/components/footer";
 import {
-  properties,
+  getProperties,
   getPropertyBySlug,
   getRelatedProperties,
 } from "@/lib/properties-data";
@@ -23,6 +23,7 @@ import Link from "next/link";
 import { PropertyGallery } from "@/components/property-gallery";
 
 export async function generateStaticParams() {
+  const properties = await getProperties();
   return properties.map((property) => ({
     slug: property.slug,
   }));
@@ -34,12 +35,18 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const property = getPropertyBySlug(slug);
+  const property = await getPropertyBySlug(slug);
   if (!property) return { title: "Property Not Found" };
 
   return {
     title: `${property.title} | LuxeLiving`,
     description: property.description,
+    openGraph: {
+      title: property.title,
+      description: property.description,
+      images: property.images.map((img) => ({ url: img })),
+      type: "website",
+    },
   };
 }
 
@@ -49,13 +56,36 @@ export default async function PropertyDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const property = getPropertyBySlug(slug);
+  const property = await getPropertyBySlug(slug);
 
   if (!property) {
     notFound();
   }
 
-  const relatedProperties = getRelatedProperties(slug);
+  const relatedProperties = await getRelatedProperties(slug);
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "RealEstateListing",
+    name: property.title,
+    description: property.description,
+    image: property.images,
+    url: `https://luxeliving.vercel.app/properties/${property.slug}`,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: property.city,
+      addressRegion: property.location,
+    },
+    numberOfRooms: property.beds,
+    numberOfBathroomsTotal: property.baths,
+    floorSize: {
+      "@type": "QuantitativeValue",
+      value: property.sqftValue,
+      unitCode: "FTK",
+    },
+    price: property.priceValue,
+    priceCurrency: "INR",
+  };
 
   const statusConfig = {
     available: {
@@ -74,6 +104,10 @@ export default async function PropertyDetailPage({
 
   return (
     <main className="min-h-screen bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <InnerNavbar />
 
       {/* Hero Gallery */}
@@ -160,18 +194,22 @@ export default async function PropertyDetailPage({
                   </div>
                   <span className="text-[13px] text-neutral-500">Sq. Ft.</span>
                 </div>
-                <div className="text-center">
-                  <div className="flex items-center justify-center gap-2 mb-2">
-                    <Car
-                      className="w-5 h-5 text-neutral-400"
-                      strokeWidth={1.5}
-                    />
-                    <span className="text-2xl font-serif font-medium text-neutral-900">
-                      {property.parking}
+                {property.parking && (
+                  <div className="text-center">
+                    <div className="flex items-center justify-center gap-2 mb-2">
+                      <Car
+                        className="w-5 h-5 text-neutral-400"
+                        strokeWidth={1.5}
+                      />
+                      <span className="text-2xl font-serif font-medium text-neutral-900">
+                        {property.parking}
+                      </span>
+                    </div>
+                    <span className="text-[13px] text-neutral-500">
+                      Parking
                     </span>
                   </div>
-                  <span className="text-[13px] text-neutral-500">Parking</span>
-                </div>
+                )}
               </div>
 
               {/* Description */}
@@ -242,18 +280,20 @@ export default async function PropertyDetailPage({
               </div>
 
               {/* Year Built */}
-              <div className="flex items-center gap-3 p-4 bg-neutral-50 rounded-xl">
-                <Calendar
-                  className="w-5 h-5 text-neutral-400"
-                  strokeWidth={1.5}
-                />
-                <span className="text-neutral-600">
-                  Built in{" "}
-                  <span className="font-medium text-neutral-900">
-                    {property.yearBuilt}
+              {property.yearBuilt && (
+                <div className="flex items-center gap-3 p-4 bg-neutral-50 rounded-xl">
+                  <Calendar
+                    className="w-5 h-5 text-neutral-400"
+                    strokeWidth={1.5}
+                  />
+                  <span className="text-neutral-600">
+                    Built in{" "}
+                    <span className="font-medium text-neutral-900">
+                      {property.yearBuilt}
+                    </span>
                   </span>
-                </span>
-              </div>
+                </div>
+              )}
             </div>
 
             {/* Sidebar */}

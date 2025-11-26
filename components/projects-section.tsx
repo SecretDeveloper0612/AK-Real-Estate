@@ -2,10 +2,12 @@ import { SectionHeading } from "./section-heading";
 import { PropertyCard } from "./property-card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { properties } from "@/lib/properties-data";
+import { getProperties } from "@/lib/properties-data";
 import Link from "next/link";
 
-export function ProjectsSection() {
+export async function ProjectsSection() {
+  const properties = await getProperties();
+
   return (
     <section id="projects" className="py-16 md:py-36 bg-neutral-50/50">
       <div className="container mx-auto px-4 md:px-6 lg:px-12">
