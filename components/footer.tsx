@@ -4,34 +4,30 @@ import {
   Instagram,
   Twitter,
   Linkedin,
-  ArrowUpRight,
+  MapPin,
+  Phone,
+  Mail,
 } from "lucide-react";
 
 const footerLinks = {
-  company: [
+  nav: [
+    { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
-    { label: "Our Team", href: "/about#team" },
-    { label: "Careers", href: "#" },
-    { label: "Press", href: "#" },
+    { label: "Properties", href: "/properties" },
+    { label: "Contact", href: "/contact" },
   ],
   properties: [
-    { label: "All Properties", href: "/properties" },
-    { label: "Featured", href: "/properties" },
-    { label: "New Listings", href: "/properties" },
-    { label: "Virtual Tours", href: "#" },
+    { label: "Luxury Villas", href: "/properties" },
+    { label: "Modern Apartments", href: "/properties" },
+    { label: "Penthouses", href: "/properties" },
+    { label: "Sea View", href: "/properties" },
   ],
-  services: [
-    { label: "Buy a Home", href: "/properties" },
-    { label: "Sell a Home", href: "/contact" },
-    { label: "Investment", href: "/contact" },
-    { label: "Property Management", href: "/contact" },
-  ],
-  resources: [
-    { label: "Blog", href: "#" },
-    { label: "Market Reports", href: "#" },
-    { label: "Home Valuation", href: "#" },
-    { label: "Mortgage Calculator", href: "#" },
-  ],
+};
+
+const contactInfo = {
+  address: "123 Luxury Lane, Beverly Hills, CA 90210",
+  phone: "+1 (555) 123-4567",
+  email: "contact@luxeliving.com",
 };
 
 const socialLinks = [
@@ -49,9 +45,9 @@ export function Footer() {
 
       {/* Main Footer */}
       <div className="container mx-auto px-6 lg:px-12 py-12 md:py-20 relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
           {/* Brand */}
-          <div className="col-span-2">
+          <div className="lg:col-span-4">
             <Link
               href="/"
               className="text-3xl font-serif font-bold tracking-tight text-white"
@@ -79,13 +75,13 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Links */}
-          <div>
+          {/* Quick Links */}
+          <div className="lg:col-span-2">
             <h4 className="font-medium mb-6 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
-              Company
+              Explore
             </h4>
             <ul className="space-y-4">
-              {footerLinks.company.map((link) => (
+              {footerLinks.nav.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
@@ -98,7 +94,8 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          {/* Properties */}
+          <div className="lg:col-span-2">
             <h4 className="font-medium mb-6 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
               Properties
             </h4>
@@ -116,66 +113,25 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          {/* Contact */}
+          <div className="lg:col-span-4">
             <h4 className="font-medium mb-6 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
-              Services
+              Contact Us
             </h4>
-            <ul className="space-y-4">
-              {footerLinks.services.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-neutral-400 hover:text-white transition-colors text-[14px] font-light tracking-wide"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+            <ul className="space-y-4 text-neutral-400 text-[14px] font-light tracking-wide">
+              <li className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-neutral-500 shrink-0" />
+                <span>{contactInfo.address}</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="w-5 h-5 text-neutral-500 shrink-0" />
+                <span>{contactInfo.phone}</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail className="w-5 h-5 text-neutral-500 shrink-0" />
+                <span>{contactInfo.email}</span>
+              </li>
             </ul>
-          </div>
-
-          <div>
-            <h4 className="font-medium mb-6 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
-              Resources
-            </h4>
-            <ul className="space-y-4">
-              {footerLinks.resources.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-neutral-400 hover:text-white transition-colors text-[14px] font-light tracking-wide"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div className="border-t border-neutral-900 relative z-10">
-        <div className="container mx-auto px-6 lg:px-12 py-12">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 bg-neutral-900/30 p-6 md:p-8 rounded-2xl border border-neutral-800/50 backdrop-blur-sm">
-            <div>
-              <h4 className="font-serif text-2xl mb-2 text-white">
-                Stay Updated
-              </h4>
-              <p className="text-neutral-400 text-[14px] font-light">
-                Subscribe to receive exclusive property listings and market
-                insights.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-6 py-3 bg-neutral-950 border border-neutral-800 rounded-full text-[14px] w-full md:w-80 focus:outline-none focus:border-neutral-600 placeholder:text-neutral-600 transition-colors text-white"
-              />
-              <button className="px-8 py-3 bg-white text-neutral-950 rounded-full text-[13px] font-medium hover:bg-neutral-200 transition-colors flex items-center justify-center gap-2 tracking-wide uppercase w-full sm:w-auto">
-                Subscribe
-              </button>
-            </div>
           </div>
         </div>
       </div>

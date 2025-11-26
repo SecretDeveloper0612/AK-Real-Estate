@@ -1,4 +1,4 @@
-import { InnerNavbar } from "@/components/inner-navbar";
+import { Navbar } from "@/components/navbar";
 import { PageHero } from "@/components/page-hero";
 import { Footer } from "@/components/footer";
 import { SectionHeading } from "@/components/section-heading";
@@ -111,7 +111,7 @@ const team = [
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-background">
-      <InnerNavbar />
+      <Navbar />
 
       <PageHero
         label="Our Story"

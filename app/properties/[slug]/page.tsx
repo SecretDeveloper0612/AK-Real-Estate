@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { InnerNavbar } from "@/components/inner-navbar";
+import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import {
   getProperties,
@@ -108,7 +108,7 @@ export default async function PropertyDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <InnerNavbar />
+      <Navbar />
 
       {/* Hero Gallery */}
       <section className="pt-24">

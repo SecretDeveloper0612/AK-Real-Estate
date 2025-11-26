@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { InnerNavbar } from "@/components/inner-navbar"
+import { Navbar } from "@/components/navbar"
 import { PageHero } from "@/components/page-hero"
 import { Footer } from "@/components/footer"
 import { MapPin, Phone, Mail, Clock, Send, ArrowUpRight } from "lucide-react"
@@ -57,7 +57,7 @@ export default function ContactPage() {
 
   return (
     <main className="min-h-screen bg-background">
-      <InnerNavbar />
+      <Navbar />
 
       <PageHero
       label="Get in Touch"
