@@ -156,7 +156,8 @@ function mapHygraphProperty(p: any): Property {
     videoUrl: p.videoURl,
     yearBuilt: p.yearBuilt,
     parking: p.parking,
-    isOnHomePage: typeof p.isOnHomePage === "boolean" ? p.isOnHomePage : undefined,
+    isOnHomePage:
+      typeof p.isOnHomePage === "boolean" ? p.isOnHomePage : undefined,
   };
 }
 
