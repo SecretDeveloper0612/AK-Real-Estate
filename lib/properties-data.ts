@@ -27,6 +27,40 @@ export interface Property {
   isOnHomePage?: boolean;
 }
 
+const HOME_PROPERTIES_QUERY = gql`
+  query HomeProperties {
+    properties(where: { isOnHomePage: true }) {
+      id
+      slug
+      title
+      location
+      city
+      price
+      priceValue
+      beds
+      baths
+      sqft
+      sqftValue
+      propertyStatus
+      propertyType
+      image {
+        url
+      }
+      iamges {
+        url
+      }
+      description
+      features
+      amenities
+      floorPlan
+      videoURl
+      yearBuilt
+      parking
+      isOnHomePage
+    }
+  }
+`;
+
 const PROPERTIES_QUERY = gql`
   query Properties {
     properties {
@@ -56,7 +90,6 @@ const PROPERTIES_QUERY = gql`
       videoURl
       yearBuilt
       parking
-      isOnHomePage
     }
   }
 `;
@@ -90,7 +123,6 @@ const PROPERTY_BY_SLUG_QUERY = gql`
       videoURl
       yearBuilt
       parking
-      isOnHomePage
     }
   }
 `;
@@ -124,8 +156,23 @@ function mapHygraphProperty(p: any): Property {
     videoUrl: p.videoURl,
     yearBuilt: p.yearBuilt,
     parking: p.parking,
-    isOnHomePage: Boolean(p.isOnHomePage),
+    isOnHomePage: typeof p.isOnHomePage === "boolean" ? p.isOnHomePage : undefined,
   };
+}
+
+export async function getHomeProperties(): Promise<Property[]> {
+  try {
+    const { properties } = await hygraphClient.request<{ properties: any[] }>(
+      HOME_PROPERTIES_QUERY
+    );
+    return properties
+      .map(mapHygraphProperty)
+      .filter((property) => property.isOnHomePage)
+      .slice(0, 6);
+  } catch (error) {
+    console.error("Error fetching home properties:", error);
+    return [];
+  }
 }
 
 export async function getProperties(): Promise<Property[]> {

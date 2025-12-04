@@ -2,17 +2,12 @@ import { SectionHeading } from "./section-heading";
 import { PropertyCard } from "./property-card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { getProperties } from "@/lib/properties-data";
+import { getHomeProperties } from "@/lib/properties-data";
 import Link from "next/link";
 
 export async function ProjectsSection() {
-  const properties = await getProperties();
-  const featuredProperties = properties.filter(
-    (property) => property.isOnHomePage
-  );
-  const propertiesToDisplay = (
-    featuredProperties.length ? featuredProperties : properties
-  ).slice(0, 6);
+  const featuredProperties = await getHomeProperties();
+  const hasFeatured = featuredProperties.length > 0;
 
   return (
     <section id="projects" className="py-16 md:py-36 bg-neutral-50/50">
@@ -23,22 +18,29 @@ export async function ProjectsSection() {
           description="From AK Tower flats to villa communities near Kathgodam, every plan is tailored for local families."
         />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
-          {propertiesToDisplay.map((property) => (
-            <PropertyCard
-              key={property.id}
-              title={property.title}
-              location={property.location}
-              price={property.price}
-              beds={property.beds}
-              baths={property.baths}
-              sqft={property.sqft}
-              status={property.status}
-              image={property.image}
-              slug={property.slug}
-            />
-          ))}
-        </div>
+        {hasFeatured ? (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+            {featuredProperties.map((property) => (
+              <PropertyCard
+                key={property.id}
+                title={property.title}
+                location={property.location}
+                price={property.price}
+                beds={property.beds}
+                baths={property.baths}
+                sqft={property.sqft}
+                status={property.status}
+                image={property.image}
+                slug={property.slug}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="rounded-2xl border border-neutral-200 bg-white/70 p-10 text-center text-neutral-500 text-sm">
+            No properties are currently highlighted for the home page. Toggle
+            "Show on Home" in Hygraph to feature a project here.
+          </div>
+        )}
 
         <div className="text-center mt-14">
           <Button

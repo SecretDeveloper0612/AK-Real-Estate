@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -37,9 +38,9 @@ export function Navbar() {
       <div className="container mx-auto px-4 md:px-6 lg:px-12 flex items-center justify-between">
         <Link
           href="/"
-          className="text-2xl md:text-3xl font-serif font-bold text-white tracking-tight hover:opacity-80 transition-opacity duration-300"
+          className="text-2xl font-serif font-bold text-white tracking-tight hover:opacity-80 transition-opacity duration-300"
         >
-          AK Real Estate
+          <Image src="/logo.png" alt="LuxeLiving Logo" width={70} height={70} />
         </Link>
 
         {/* Desktop Navigation */}
@@ -61,7 +62,7 @@ export function Navbar() {
             variant="outline"
             className="border-white/30 text-white hover:bg-white hover:text-neutral-950 hover:border-white transition-all duration-300 bg-transparent rounded-full px-6 text-[13px] tracking-wide font-medium"
           >
-            <Link href="tel:9837067289">Call 98370 67289</Link>
+            <Link href="/contact">Schedule a Tour</Link>
           </Button>
         </div>
 
@@ -93,7 +94,7 @@ export function Navbar() {
               asChild
               className="mt-8 bg-white text-neutral-900 hover:bg-neutral-200 rounded-full px-8 py-6 text-lg w-full max-w-xs"
             >
-              <Link href="tel:9837067289">Call 98370 67289</Link>
+              <Link href="/contact">Schedule a Tour</Link>
             </Button>
           </nav>
         </div>
