@@ -7,6 +7,7 @@ import {
   MapPin,
   Phone,
   Mail,
+  Clock,
 } from "lucide-react";
 
 const footerLinks = {
@@ -17,17 +18,18 @@ const footerLinks = {
     { label: "Contact", href: "/contact" },
   ],
   properties: [
-    { label: "Luxury Villas", href: "/properties" },
-    { label: "Modern Apartments", href: "/properties" },
-    { label: "Penthouses", href: "/properties" },
-    { label: "Sea View", href: "/properties" },
+    { label: "Family Villas", href: "/properties" },
+    { label: "City Flats", href: "/properties" },
+    { label: "Under-Construction", href: "/properties" },
+    { label: "Ready-to-Move", href: "/properties" },
   ],
 };
 
 const contactInfo = {
-  address: "123 Luxury Lane, Beverly Hills, CA 90210",
-  phone: "+1 (555) 123-4567",
-  email: "contact@luxeliving.com",
+  address: "AK Tower, Durga City Centre, Haldwani 263139",
+  phones: "98370 67289 / 97195 49415",
+  landline: "05946 293888",
+  email: "anil2494@gmail.com",
 };
 
 const socialLinks = [
@@ -52,11 +54,12 @@ export function Footer() {
               href="/"
               className="text-3xl font-serif font-bold tracking-tight text-white"
             >
-              LuxeLiving
+              AK Real Estate
             </Link>
             <p className="text-neutral-400 mt-6 leading-relaxed max-w-xs text-[15px] font-light">
-              Creating exceptional living spaces for over 30 years. Your dream
-              home awaits in the world's most coveted locations.
+              Since 2003 we have been designing villas and flats exclusively in
+              Haldwani, helping more than 400 families settle into dependable
+              homes.
             </p>
             <div className="flex gap-3 mt-8">
               {socialLinks.map((social) => (
@@ -125,11 +128,19 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-neutral-500 shrink-0" />
-                <span>{contactInfo.phone}</span>
+                <span>{contactInfo.phones}</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="w-5 h-5 text-neutral-500 shrink-0" />
+                <span>Landline: {contactInfo.landline}</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-neutral-500 shrink-0" />
                 <span>{contactInfo.email}</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Clock className="w-5 h-5 text-neutral-500 shrink-0" />
+                <span>Daily: 9AM – 1PM & 4PM – 7PM</span>
               </li>
             </ul>
           </div>
@@ -140,7 +151,7 @@ export function Footer() {
         <div className="container mx-auto px-6 lg:px-12 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-[12px] text-neutral-500 font-light tracking-wide">
             <p>
-              &copy; {new Date().getFullYear()} LuxeLiving. All rights reserved.
+              &copy; {new Date().getFullYear()} AK Real Estate. All rights reserved.
             </p>
             <div className="flex gap-8">
               <Link href="#" className="hover:text-white transition-colors">

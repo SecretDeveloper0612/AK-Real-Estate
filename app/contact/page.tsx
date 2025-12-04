@@ -14,45 +14,44 @@ const contactInfo = [
     icon: MapPin,
     title: "Visit Us",
     details: [
-      "LuxeLiving Tower, Level 15",
-      "Bandra Kurla Complex",
-      "Mumbai 400051, India",
+      "AK Tower, Durga City Centre",
+      "Haldwani, Uttarakhand 263139",
+      "India",
     ],
   },
   {
     icon: Phone,
     title: "Call Us",
     details: [
-      "+91 22 6789 0000",
-      "+91 98765 43210",
-      "Toll Free: 1800 123 4567",
+      "Mobile: 98370 67289",
+      "Mobile: 97195 49415",
+      "Landline: 05946 293888",
     ],
   },
   {
     icon: Mail,
     title: "Email Us",
     details: [
-      "info@luxeliving.com",
-      "sales@luxeliving.com",
-      "support@luxeliving.com",
+      "anil2494@gmail.com",
     ],
   },
   {
     icon: Clock,
     title: "Working Hours",
     details: [
-      "Monday - Friday: 9AM - 7PM",
-      "Saturday: 10AM - 5PM",
-      "Sunday: By Appointment",
+      "All days: 9AM – 1PM",
+      "Evening: 4PM – 7PM",
+      "Site visits by appointment",
     ],
   },
 ];
 
 const offices = [
-  { city: "Mumbai", address: "BKC, Bandra East", phone: "+91 22 6789 0000" },
-  { city: "Delhi", address: "Connaught Place", phone: "+91 11 4567 8900" },
-  { city: "Bangalore", address: "MG Road", phone: "+91 80 2345 6789" },
-  { city: "Goa", address: "Panaji", phone: "+91 832 234 5678" },
+  {
+    city: "Haldwani",
+    address: "AK Tower, Durga City Centre",
+    phone: "98370 67289",
+  },
 ];
 
 export default function ContactPage() {
@@ -76,9 +75,9 @@ export default function ContactPage() {
       <Navbar />
 
       <PageHero
-        label="Get in Touch"
-        title="Let's Start a Conversation"
-        description="Whether you're looking for your dream home or have questions about our projects, we're here to help."
+        label="Contact AK Real Estate"
+        title="Visit Our AK Tower Office"
+        description="Call or meet us in Durga City Centre any day between 9AM-1PM or 4PM-7PM. We handle every inquiry directly from Haldwani."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Contact", href: "/contact" },
@@ -193,7 +192,7 @@ export default function ContactPage() {
                         setFormData({ ...formData, phone: e.target.value })
                       }
                       className="w-full px-5 py-4 bg-neutral-50 border border-neutral-200 rounded-xl text-[15px] focus:outline-none focus:border-neutral-400 focus:bg-white transition-all placeholder:text-neutral-400"
-                      placeholder="+91 98765 43210"
+                      placeholder="98370 00000"
                     />
                   </div>
                   <div>
@@ -277,10 +276,10 @@ export default function ContactPage() {
             {/* Map & Offices */}
             <div>
               {/* Map Placeholder */}
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-100 mb-10">
+              <div className="aspect-4/3 rounded-2xl overflow-hidden bg-neutral-100 mb-10">
                 <img
                   src="https://images.unsplash.com/photo-1560184897-6b9a7c2f7c66?auto=format&fit=crop&w=1200&q=80"
-                  alt="Office Location"
+                  alt="AK Tower exterior"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -308,10 +307,15 @@ export default function ContactPage() {
                         <p className="text-[13px] text-neutral-600">
                           {office.phone}
                         </p>
-                        <button className="text-[12px] text-neutral-400 hover:text-neutral-900 transition-colors flex items-center gap-1 ml-auto mt-1">
+                        <a
+                          href="https://maps.app.goo.gl/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[12px] text-neutral-400 hover:text-neutral-900 transition-colors flex items-center gap-1 ml-auto mt-1"
+                        >
                           Get Directions
                           <ArrowUpRight className="w-3 h-3" />
-                        </button>
+                        </a>
                       </div>
                     </div>
                   ))}
@@ -326,30 +330,28 @@ export default function ContactPage() {
       <section className="py-28 lg:py-36 bg-neutral-950">
         <div className="container mx-auto px-6 lg:px-12 text-center">
           <span className="text-[11px] uppercase tracking-[0.3em] text-neutral-500 mb-6 block font-medium">
-            Ready to Find Your Dream Home?
+            Site Visits & Paperwork Help
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white leading-[1.1] mb-6 max-w-2xl mx-auto">
-            Schedule a Private Viewing Today
+            Speak Directly with Anil Singh&apos;s Team
           </h2>
           <p className="text-neutral-400 text-lg mb-10 max-w-xl mx-auto">
-            Our property consultants are ready to show you our exclusive
-            listings and help you find the perfect home.
+            Call between 9AM-1PM or 4PM-7PM for availability, pricing, and
+            same-day walkthroughs at AK Tower, Durga City Centre.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+912267890000"
+              href="tel:9837067289"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-neutral-900 rounded-full text-[14px] font-medium hover:bg-neutral-100 transition-all duration-300"
             >
               <Phone className="w-4 h-4" />
-              Call Now
+              Call 98370 67289
             </a>
             <a
-              href="https://wa.me/919876543210"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:anil2494@gmail.com"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border border-neutral-700 text-white rounded-full text-[14px] font-medium hover:bg-white hover:text-neutral-900 hover:border-white transition-all duration-300"
             >
-              WhatsApp Us
+              Email anil2494@gmail.com
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>

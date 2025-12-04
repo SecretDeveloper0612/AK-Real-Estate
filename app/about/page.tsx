@@ -13,100 +13,72 @@ import {
 import Link from "next/link";
 
 const stats = [
-  { value: "30+", label: "Years of Excellence" },
-  { value: "500+", label: "Projects Delivered" },
-  { value: "15,000+", label: "Happy Families" },
-  { value: "25+", label: "Cities Presence" },
+  { value: "22+", label: "Years Serving Haldwani" },
+  { value: "250+", label: "Completed Projects" },
+  { value: "400+", label: "Families Rehoused" },
+  { value: "1 City", label: "Always in Haldwani" },
 ];
 
 const values = [
   {
     icon: Award,
-    title: "Excellence",
+    title: "Quality Craftsmanship",
     description:
-      "We pursue perfection in every detail, from architectural design to the final finishing touches.",
+      "Every villa and flat is supervised by our in-house engineers to ensure finishes stay strong for decades.",
   },
   {
     icon: Users,
-    title: "Client-Centric",
+    title: "Family-First Planning",
     description:
-      "Your vision drives our work. We listen, understand, and deliver beyond expectations.",
+      "Floor plans prioritise ventilation, storage, and shared family areas so daily routines stay effortless.",
   },
   {
     icon: Building2,
-    title: "Innovation",
+    title: "Clear Communication",
     description:
-      "Embracing cutting-edge technology and sustainable practices to build for the future.",
+      "From booking to handover we keep paperwork simple, timelines visible, and costs transparent.",
   },
   {
     icon: TrendingUp,
-    title: "Integrity",
+    title: "Local Commitment",
     description:
-      "Transparent dealings, honest communication, and unwavering commitment to our promises.",
+      "We only build in Haldwani, allowing us to stay close to every site and every customer.",
   },
 ];
 
 const milestones = [
   {
-    year: "1994",
-    title: "Founded",
+    year: "2003",
+    title: "Founding Vision",
     description:
-      "LuxeLiving was established with a vision to transform real estate",
+      "Anil Singh starts AK Real Estate to design dependable homes for Haldwani families.",
   },
   {
-    year: "2002",
-    title: "First Landmark",
-    description: "Completed our first luxury high-rise in Mumbai",
+    year: "2008",
+    title: "First Villa Community",
+    description:
+      "Delivered a 40-villa gated neighbourhood that set our benchmark for open, airy plans.",
   },
   {
-    year: "2010",
-    title: "National Expansion",
-    description: "Expanded operations to 10 major cities across India",
-  },
-  {
-    year: "2015",
-    title: "10,000 Homes",
-    description: "Milestone of delivering 10,000 premium homes",
+    year: "2012",
+    title: "Flats Portfolio",
+    description:
+      "Introduced mid-rise flats near Durga City Centre so young families could stay close to workplaces.",
   },
   {
     year: "2020",
-    title: "Sustainability Focus",
-    description: "Launched green building initiative across all projects",
+    title: "AK Tower",
+    description:
+      "Completed AK Tower at Durga City Centre, now home to our head office and premium residences.",
   },
   {
     year: "2024",
-    title: "Global Recognition",
+    title: "400 Families",
     description:
-      "Awarded Best Luxury Developer at International Real Estate Awards",
+      "Celebrated 400th handover and reinforced our promise to keep building only in Haldwani.",
   },
 ];
 
-const team = [
-  {
-    name: "Rajesh Sharma",
-    role: "Founder & Chairman",
-    image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop",
-  },
-  {
-    name: "Priya Mehta",
-    role: "Chief Executive Officer",
-    image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop",
-  },
-  {
-    name: "Vikram Singh",
-    role: "Chief Architect",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop",
-  },
-  {
-    name: "Ananya Rao",
-    role: "Head of Design",
-    image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop",
-  },
-];
 
 export default function AboutPage() {
   return (
@@ -114,9 +86,9 @@ export default function AboutPage() {
       <Navbar />
 
       <PageHero
-        label="Our Story"
-        title="Building Dreams Since 1994"
-        description="For over three decades, we've been crafting exceptional living spaces that blend timeless elegance with modern comfort."
+        label="About AK Real Estate"
+        title="Haldwani Homes Since 2003"
+        description="For 22 years we have planned and delivered villas and flats exclusively for families living in and around Haldwani."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "About Us", href: "/about" },
@@ -151,28 +123,28 @@ export default function AboutPage() {
                 Our Journey
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-neutral-900 leading-[1.1] mb-8">
-                A Legacy of Excellence in Real Estate
+                Two Decades of Homes in Haldwani
               </h2>
               <div className="space-y-6 text-neutral-600 leading-relaxed">
                 <p>
-                  Founded in 1994 by Rajesh Sharma, LuxeLiving began with a
-                  simple yet profound vision: to create homes that people
-                  genuinely want to live in. What started as a small family
-                  business in Mumbai has grown into one of India&apos;s most
-                  respected real estate developers.
+                  Anil Singh started AK Real Estate in 2003 with one promise to
+                  local families: deliver homes that feel personal, practical,
+                  and ready for everyday life. From our very first plotted
+                  houses to present-day towers, we have never stepped outside
+                  Haldwani.
                 </p>
                 <p>
-                  Our journey has been defined by an unwavering commitment to
-                  quality, innovation, and customer satisfaction. Every project
-                  we undertake is a testament to our belief that a home should
-                  be more than just a structure—it should be a sanctuary that
-                  enhances the quality of life.
+                  Our journey is defined by steady construction practices,
+                  transparent paperwork, and layouts that respect Kumaoni
+                  weather and traditions. We build villas with open courtyards
+                  and apartments with smart ventilation so every family gets the
+                  comfort they expect.
                 </p>
                 <p>
-                  Today, with over 500 projects across 25 cities and more than
-                  15,000 happy families, we continue to push the boundaries of
-                  what&apos;s possible in residential development, embracing
-                  sustainable practices and cutting-edge design.
+                  Having completed more than 250 projects for 400+ families, we
+                  continue to grow with the city. Each new phase in Durga City
+                  Centre or Kathgodam carries forward the same founding vision—
+                  keep homes accessible, honest, and rooted in Haldwani.
                 </p>
               </div>
             </div>
@@ -180,17 +152,17 @@ export default function AboutPage() {
               <div className="aspect-4/5 rounded-2xl overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
-                  alt="LuxeLiving headquarters"
+                  alt="AK Real Estate office"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-neutral-900 rounded-2xl flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-4xl font-serif font-medium text-white">
-                    30+
+                    22
                   </div>
                   <div className="text-[11px] text-neutral-500 uppercase tracking-wider mt-1">
-                    Years
+                    Years in Haldwani
                   </div>
                 </div>
               </div>
@@ -284,36 +256,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-28 lg:py-36 bg-neutral-950">
-        <div className="container mx-auto px-6 lg:px-12">
-          <SectionHeading
-            label="Leadership"
-            title="Meet Our Team"
-            description="The visionaries behind LuxeLiving's success and commitment to excellence."
-            light
-          />
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member) => (
-              <div key={member.name} className="group">
-                <div className="aspect-3/4 rounded-2xl overflow-hidden mb-6 bg-neutral-900">
-                  <img
-                    src={member.image || "/placeholder.svg"}
-                    alt={member.name}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                  />
-                </div>
-                <h3 className="text-xl font-serif font-medium text-white mb-1">
-                  {member.name}
-                </h3>
-                <p className="text-neutral-500 text-[14px]">{member.role}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Why Choose Us */}
       <section className="py-28 lg:py-36">
         <div className="container mx-auto px-6 lg:px-12">
@@ -355,29 +297,29 @@ export default function AboutPage() {
 
             <div>
               <span className="text-[11px] uppercase tracking-[0.25em] text-neutral-400 mb-5 block font-medium">
-                Why Choose Us
+                Why Families Choose Us
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-neutral-900 leading-[1.1] mb-8">
-                The LuxeLiving Difference
+                Built for Haldwani, by Haldwani
               </h2>
               <p className="text-neutral-600 leading-relaxed mb-8">
-                When you choose LuxeLiving, you&apos;re not just buying a
-                property—you&apos;re investing in a lifestyle crafted with care,
-                expertise, and an unwavering commitment to quality.
+                Our entire team, material network, and customer support sit in
+                the same city as every project we deliver. That closeness keeps
+                commitments honest and handovers on time.
               </p>
 
               <ul className="space-y-4">
                 {[
-                  "Premium locations handpicked for growth potential",
-                  "World-class architects and interior designers",
-                  "Sustainable and eco-friendly construction",
-                  "Transparent pricing with no hidden costs",
-                  "Post-possession support and maintenance",
-                  "Flexible payment plans with HDFC partnership",
+                  "Exclusive focus on Haldwani neighbourhoods and infrastructure",
+                  "250+ completed villas and flats with reliable RCC construction",
+                  "Daily site visits with project managers between 9AM-1PM & 4PM-7PM",
+                  "Layouts planned for joint families with balconies, stores, and parking",
+                  "Transparent agreements with milestone-based payment schedules",
+                  "Dedicated maintenance desk located at AK Tower, Durga City Centre",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle2
-                      className="w-5 h-5 text-neutral-900 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-neutral-900 mt-0.5 shrink-0"
                       strokeWidth={1.5}
                     />
                     <span className="text-neutral-600">{item}</span>

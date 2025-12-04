@@ -39,10 +39,10 @@ export async function generateMetadata({
   if (!property) return { title: "Property Not Found" };
 
   return {
-    title: `${property.title} | LuxeLiving`,
+    title: `${property.title} | AK Real Estate`,
     description: property.description,
     openGraph: {
-      title: property.title,
+      title: `${property.title} | AK Real Estate`,
       description: property.description,
       images: property.images.map((img) => ({ url: img })),
       type: "website",
@@ -70,7 +70,7 @@ export default async function PropertyDetailPage({
     name: property.title,
     description: property.description,
     image: property.images,
-    url: `https://luxeliving.vercel.app/properties/${property.slug}`,
+    url: `https://akrealestatehaldwani.com/properties/${property.slug}`,
     address: {
       "@type": "PostalAddress",
       addressLocality: property.city,
@@ -319,11 +319,11 @@ export default async function PropertyDetailPage({
                       <ArrowUpRight className="w-4 h-4" />
                     </Link>
                     <a
-                      href="tel:+912267890000"
+                      href="tel:9837067289"
                       className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-transparent border border-neutral-200 text-neutral-900 rounded-full text-[14px] font-medium hover:bg-neutral-50 transition-all duration-300"
                     >
                       <Phone className="w-4 h-4" />
-                      Call Now
+                      Call 98370 67289
                     </a>
                   </div>
 
@@ -334,36 +334,39 @@ export default async function PropertyDetailPage({
                     <div className="flex items-center gap-4">
                       <img
                         src="/placeholder.svg?height=60&width=60"
-                        alt="Consultant"
+                        alt="AK Real Estate Desk"
                         className="w-14 h-14 rounded-full object-cover"
                       />
                       <div>
                         <p className="font-medium text-neutral-900">
-                          Rahul Kapoor
+                          AK Real Estate Desk
                         </p>
                         <p className="text-[13px] text-neutral-500">
-                          Senior Property Advisor
+                          AK Tower, Durga City Centre
                         </p>
                       </div>
                     </div>
                     <a
-                      href="mailto:rahul@luxeliving.com"
+                      href="mailto:anil2494@gmail.com"
                       className="flex items-center gap-2 mt-4 text-[13px] text-neutral-500 hover:text-neutral-900 transition-colors"
                     >
                       <Mail className="w-4 h-4" />
-                      rahul@luxeliving.com
+                      anil2494@gmail.com
                     </a>
                   </div>
                 </div>
 
-                {/* Financing Banner */}
+                {/* Office Info Banner */}
                 <div className="bg-neutral-950 rounded-2xl p-6 text-center">
                   <p className="text-[13px] text-neutral-400 mb-2">
-                    Home Loan Partner
+                    Visit AK Tower Office
                   </p>
-                  <p className="text-white font-medium mb-3">HDFC Bank</p>
+                  <p className="text-white font-medium mb-3">
+                    Durga City Centre, Haldwani
+                  </p>
                   <p className="text-[13px] text-neutral-500">
-                    Get pre-approved for attractive interest rates
+                    Walk in daily between 9AM-1PM or 4PM-7PM for paperwork
+                    support
                   </p>
                 </div>
               </div>

@@ -2,10 +2,10 @@ import { SectionHeading } from "./section-heading";
 import { Award, Users, Home, Globe } from "lucide-react";
 
 const stats = [
-  { icon: Award, value: "30+", label: "Years of Excellence" },
-  { icon: Users, value: "5000+", label: "Happy Families" },
-  { icon: Home, value: "150+", label: "Projects Delivered" },
-  { icon: Globe, value: "25+", label: "Cities Worldwide" },
+  { icon: Award, value: "22+", label: "Years in Service" },
+  { icon: Home, value: "250+", label: "Delivered Projects" },
+  { icon: Users, value: "400+", label: "Families Settled" },
+  { icon: Globe, value: "Haldwani", label: "City We Serve" },
 ];
 
 export function AboutSection() {
@@ -21,15 +21,17 @@ export function AboutSection() {
               align="left"
             />
             <p className="text-neutral-600 leading-[1.8] mb-6 text-base">
-              At LuxeLiving, we believe that a home is more than just four walls
-              and a roof. It&apos;s where memories are made, dreams are
-              nurtured, and life unfolds in its most beautiful moments.
+              AK Real Estate was born in 2003 when Anil Singh decided families
+              in Haldwani deserved thoughtfully planned homes built with care.
+              Two decades later we still design every villa and flat around the
+              routines, festivals, and milestones of the people who live in
+              them.
             </p>
             <p className="text-neutral-600 leading-[1.8] mb-12 text-base">
-              Our commitment to excellence has made us a trusted name in premium
-              real estate, with a portfolio spanning across continents and a
-              legacy built on integrity, innovation, and impeccable
-              craftsmanship.
+              We have now completed more than 250 projects and handed over keys
+              to 400+ families, all within the city we call home. Our team
+              remains focused on dependable construction, clear communication,
+              and delivering homes you are proud to show your children.
             </p>
 
             <div className="grid grid-cols-2 gap-5 animate-fade-up-delay-1">
@@ -64,10 +66,11 @@ export function AboutSection() {
             </div>
             <div className="absolute -bottom-8 -left-8 bg-neutral-900 text-white p-8 rounded-xl max-w-[280px] hidden lg:block shadow-2xl">
               <p className="text-lg font-serif italic leading-relaxed text-neutral-200">
-                &quot;Building dreams into reality, one home at a time.&quot;
+                &quot;Every plan starts with a family conversation, never a
+                sales target.&quot;
               </p>
               <p className="text-[13px] text-neutral-500 mt-5 tracking-wide">
-                — The LuxeLiving Promise
+                — Anil Singh, Founder
               </p>
             </div>
           </div>

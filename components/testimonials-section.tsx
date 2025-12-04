@@ -4,23 +4,23 @@ import { TestimonialCard } from "./testimonial-card"
 const testimonials = [
   {
     quote:
-      "LuxeLiving transformed our dream into reality. Their attention to detail and commitment to quality is unmatched. We couldn't be happier with our new home.",
-    author: "Michael & Sarah Johnson",
-    role: "Homeowners, Beverly Hills",
+      "AK Real Estate planned our duplex exactly around our parents' routine. The team met us daily during the 4PM slot and delivered keys before Diwali.",
+    author: "Sharma Family",
+    role: "Residents, Nainital Road, Haldwani",
     image: "/professional-couple-portrait-smiling.jpg",
   },
   {
     quote:
-      "The team's professionalism and expertise made the entire process seamless. They truly understand what luxury living means.",
-    author: "David Chen",
-    role: "Investment Property Owner",
+      "Every document was explained in plain Hindi and the payment schedule stayed transparent. It felt like working with neighbours, not a distant builder.",
+    author: "Nidhi & Saurabh",
+    role: "Flat Owners, Durga City Centre",
     image: "/asian-businessman-professional-headshot.jpg",
   },
   {
     quote:
-      "From the architectural design to the final finishing touches, every aspect exceeded our expectations. LuxeLiving sets the standard.",
-    author: "Emily Rodriguez",
-    role: "Interior Designer",
+      "Their focus on ventilation and storage makes day-to-day living so easy. We moved in with our extended family and still have room for guests.",
+    author: "Col. (Retd.) Rawat",
+    role: "Villa Owner, Kathgodam",
     image: "/woman-designer-professional-portrait.jpg",
   },
 ]
@@ -32,7 +32,7 @@ export function TestimonialsSection() {
         <SectionHeading
           label="Testimonials"
           title="What Our Clients Say"
-          description="Hear from the families and investors who have experienced the LuxeLiving difference."
+          description="Families from across Haldwani share how AK Real Estate kept their home journey simple and dependable."
         />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">

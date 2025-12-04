@@ -12,26 +12,32 @@ import { useState } from "react"
 const contactInfo = [
   {
     icon: Phone,
-    label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    label: "Call Us",
+    value: "98370 67289 / 97195 49415",
+    href: "tel:9837067289",
+  },
+  {
+    icon: Phone,
+    label: "Landline",
+    value: "05946 293888",
+    href: "tel:05946293888",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "hello@luxeliving.com",
-    href: "mailto:hello@luxeliving.com",
+    value: "anil2494@gmail.com",
+    href: "mailto:anil2494@gmail.com",
   },
   {
     icon: MapPin,
     label: "Address",
-    value: "123 Luxury Lane, Beverly Hills, CA 90210",
-    href: "#",
+    value: "AK Tower, Durga City Centre, Haldwani 263139",
+    href: "https://maps.app.goo.gl/",
   },
   {
     icon: Clock,
-    label: "Hours",
-    value: "Mon - Sat: 9AM - 6PM",
+    label: "Working Hours",
+    value: "All days: 9AM – 1PM & 4PM – 7PM",
     href: "#",
   },
 ]
@@ -53,9 +59,9 @@ export function ContactSection() {
     <section id="contact" className="py-28 md:py-36 bg-white">
       <div className="container mx-auto px-6 lg:px-12">
         <SectionHeading
-          label="Contact Us"
-          title="Let's Start a Conversation"
-          description="Have questions or ready to explore your options? Our team is here to help."
+          label="Contact AK Real Estate"
+          title="We Build for Haldwani Families"
+          description="Reach our team any day between 9AM-1PM or 4PM-7PM for site visits, availability, or paperwork help."
         />
 
         <div className="grid lg:grid-cols-2 gap-16">
@@ -116,8 +122,8 @@ export function ContactSection() {
           <div>
             <h3 className="text-xl font-serif font-medium text-neutral-900 mb-6">Get in Touch</h3>
             <p className="text-neutral-500 leading-relaxed mb-10 text-[15px]">
-              Whether you&apos;re looking to buy, sell, or simply explore the possibilities, we&apos;re here to make
-              your real estate journey exceptional.
+              Share your family&apos;s requirements and we&apos;ll guide you to the right villa or flat inside Haldwani.
+              We can also schedule same-day walk-throughs from our AK Tower office.
             </p>
 
             <div className="space-y-5">
@@ -139,7 +145,7 @@ export function ContactSection() {
             </div>
 
             <div className="mt-10 aspect-video rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200/60">
-              <img src="/minimal-google-maps-style-map-beverly-hills.jpg" alt="Location map" className="w-full h-full object-cover" />
+              <img src="/minimal-google-maps-style-map-beverly-hills.jpg" alt="Map showing AK Tower in Haldwani" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

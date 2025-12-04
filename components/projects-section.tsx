@@ -12,9 +12,9 @@ export async function ProjectsSection() {
     <section id="projects" className="py-16 md:py-36 bg-neutral-50/50">
       <div className="container mx-auto px-4 md:px-6 lg:px-12">
         <SectionHeading
-          label="Featured Properties"
+          label="Featured Haldwani Projects"
           title="Exceptional Homes Await"
-          description="Discover our curated collection of premium properties, each designed to offer an unparalleled living experience."
+          description="From AK Tower flats to villa communities near Kathgodam, every plan is tailored for local families."
         />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">

@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { getProperties } from "@/lib/properties-data";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://luxeliving.vercel.app"; // Replace with your actual domain
+  const baseUrl = "https://akrealestatehaldwani.com";
 
   // Static routes
   const routes = ["", "/about", "/properties", "/contact"].map((route) => ({

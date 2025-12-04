@@ -15,48 +15,46 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://luxeliving.vercel.app"), // Replace with your actual domain
+  metadataBase: new URL("https://akrealestatehaldwani.com"),
   title: {
-    default: "LuxeLiving | Premium Real Estate & Modern Living Spaces",
-    template: "%s | LuxeLiving",
+    default: "AK Real Estate | Haldwani Villas & Flats",
+    template: "%s | AK Real Estate",
   },
   description:
-    "Discover exceptional properties and luxury homes. For more than 30 years, we've been bringing premium residential projects to life around the world.",
+    "AK Real Estate has delivered villas and flats across Haldwani since 2003, helping more than 400 families settle into thoughtfully planned homes.",
   keywords: [
-    "Real Estate",
-    "Luxury Homes",
-    "Premium Properties",
-    "Villas",
-    "Apartments",
-    "Penthouses",
-    "Real Estate Agency",
+    "AK Real Estate",
+    "Haldwani Homes",
+    "Haldwani Villas",
+    "Haldwani Flats",
+    "Uttarakhand Real Estate",
+    "Durga City Centre",
   ],
-  authors: [{ name: "LuxeLiving" }],
-  creator: "LuxeLiving",
+  authors: [{ name: "AK Real Estate" }],
+  creator: "AK Real Estate",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://luxeliving.vercel.app",
-    title: "LuxeLiving | Premium Real Estate",
+    url: "https://akrealestatehaldwani.com",
+    title: "AK Real Estate | Haldwani Villas & Flats",
     description:
-      "Discover exceptional properties and luxury homes. For more than 30 years, we've been bringing premium residential projects to life around the world.",
-    siteName: "LuxeLiving",
+      "Homes crafted for Haldwani families since 2003. Visit AK Tower at Durga City Centre to explore ongoing villas and flats.",
+    siteName: "AK Real Estate",
     images: [
       {
-        url: "/images/og-image.jpg", // You should add an OG image to public/images
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "LuxeLiving Real Estate",
+        alt: "AK Real Estate Homes",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "LuxeLiving | Premium Real Estate",
+    title: "AK Real Estate | Haldwani Villas & Flats",
     description:
-      "Discover exceptional properties and luxury homes. For more than 30 years, we've been bringing premium residential projects to life around the world.",
+      "Homes crafted for Haldwani families since 2003. Visit AK Tower at Durga City Centre to explore ongoing villas and flats.",
     images: ["/images/og-image.jpg"],
-    creator: "@luxeliving",
   },
   robots: {
     index: true,

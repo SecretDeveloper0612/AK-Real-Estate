@@ -22,14 +22,11 @@ const propertyTypes = ["All", "Villa", "Apartment", "Penthouse", "Townhouse"];
 const statusOptions = ["All", "Available", "Coming Soon", "Sold"];
 const cities = [
   "All",
-  "Mumbai",
-  "Lonavala",
-  "Udaipur",
-  "Goa",
-  "Gurugram",
-  "Jaipur",
-  "Shimla",
-  "Bangalore",
+  "Haldwani",
+  "Durga City Centre",
+  "Kathgodam",
+  "Nainital Road",
+  "Lal Danth",
 ];
 
 interface PropertiesClientProps {
@@ -109,9 +106,9 @@ export default function PropertiesClient({
       <Navbar />
 
       <PageHero
-        label="Our Portfolio"
-        title="Discover Exceptional Properties"
-        description="Explore our curated collection of luxury homes, from contemporary penthouses to serene hillside villas."
+        label="Our Haldwani Portfolio"
+        title="Villas & Flats Built Since 2003"
+        description="Browse ready and under-construction homes across Durga City Centre, Kathgodam, and Nainital Road."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Properties", href: "/properties" },

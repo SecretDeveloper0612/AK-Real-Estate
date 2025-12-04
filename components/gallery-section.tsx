@@ -52,7 +52,7 @@ export function GallerySection() {
         <SectionHeading
           label="Gallery"
           title="A Glimpse Into Luxury"
-          description="Experience the artistry and attention to detail that defines every LuxeLiving property."
+          description="Experience the craft and practical detailing inside every AK Real Estate villa and flat in Haldwani."
           light
         />
 
