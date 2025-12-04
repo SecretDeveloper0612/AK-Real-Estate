@@ -7,6 +7,13 @@ import Link from "next/link";
 
 export async function ProjectsSection() {
   const properties = await getProperties();
+  const featuredProperties = properties.filter(
+    (property) => property.isOnHomePage
+  );
+  const propertiesToDisplay = (featuredProperties.length
+    ? featuredProperties
+    : properties
+  ).slice(0, 6);
 
   return (
     <section id="projects" className="py-16 md:py-36 bg-neutral-50/50">
@@ -18,7 +25,7 @@ export async function ProjectsSection() {
         />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
-          {properties.slice(0, 6).map((property) => (
+          {propertiesToDisplay.map((property) => (
             <PropertyCard
               key={property.id}
               title={property.title}

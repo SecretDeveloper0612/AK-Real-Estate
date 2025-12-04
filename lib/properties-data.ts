@@ -24,6 +24,7 @@ export interface Property {
   videoUrl?: string;
   yearBuilt?: number;
   parking?: number;
+  isOnHomePage?: boolean;
 }
 
 const PROPERTIES_QUERY = gql`
@@ -55,6 +56,7 @@ const PROPERTIES_QUERY = gql`
       videoURl
       yearBuilt
       parking
+      isOnHomePage
     }
   }
 `;
@@ -88,6 +90,7 @@ const PROPERTY_BY_SLUG_QUERY = gql`
       videoURl
       yearBuilt
       parking
+      isOnHomePage
     }
   }
 `;
@@ -121,6 +124,7 @@ function mapHygraphProperty(p: any): Property {
     videoUrl: p.videoURl,
     yearBuilt: p.yearBuilt,
     parking: p.parking,
+    isOnHomePage: Boolean(p.isOnHomePage),
   };
 }
 
