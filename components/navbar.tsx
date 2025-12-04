@@ -40,7 +40,7 @@ export function Navbar() {
           href="/"
           className="text-2xl font-serif font-bold text-white tracking-tight hover:opacity-80 transition-opacity duration-300"
         >
-          <Image src="/logo.png" alt="LuxeLiving Logo" width={48} height={48} />
+          <Image src="/logo.png" alt="LuxeLiving Logo" width={70} height={70} />
         </Link>
 
         {/* Desktop Navigation */}
