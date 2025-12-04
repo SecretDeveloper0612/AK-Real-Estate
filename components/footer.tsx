@@ -151,7 +151,8 @@ export function Footer() {
         <div className="container mx-auto px-6 lg:px-12 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-[12px] text-neutral-500 font-light tracking-wide">
             <p>
-              &copy; {new Date().getFullYear()} AK Real Estate. All rights reserved.
+              &copy; {new Date().getFullYear()} AK Real Estate. All rights
+              reserved.
             </p>
             <div className="flex gap-8">
               <Link href="#" className="hover:text-white transition-colors">

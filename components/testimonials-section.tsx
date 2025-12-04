@@ -1,5 +1,5 @@
-import { SectionHeading } from "./section-heading"
-import { TestimonialCard } from "./testimonial-card"
+import { SectionHeading } from "./section-heading";
+import { TestimonialCard } from "./testimonial-card";
 
 const testimonials = [
   {
@@ -23,7 +23,7 @@ const testimonials = [
     role: "Villa Owner, Kathgodam",
     image: "/woman-designer-professional-portrait.jpg",
   },
-]
+];
 
 export function TestimonialsSection() {
   return (
@@ -42,5 +42,5 @@ export function TestimonialsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

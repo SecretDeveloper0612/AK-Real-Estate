@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 export function CtaSection() {
   return (
@@ -24,8 +24,9 @@ export function CtaSection() {
             Homes for Haldwani Families Since 2003
           </h2>
           <p className="text-lg text-neutral-400 mb-12 leading-relaxed font-light max-w-xl mx-auto">
-            Drop by between 9AM-1PM or 4PM-7PM to review current villas and flats with Anil Singh&apos;s on-site team at
-            AK Tower, Durga City Centre.
+            Drop by between 9AM-1PM or 4PM-7PM to review current villas and
+            flats with Anil Singh&apos;s on-site team at AK Tower, Durga City
+            Centre.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -51,5 +52,5 @@ export function CtaSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

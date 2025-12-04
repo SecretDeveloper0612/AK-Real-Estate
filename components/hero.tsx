@@ -41,8 +41,8 @@ export function Hero() {
 
           <p className="text-base md:text-xl text-neutral-200 mb-8 md:mb-12 max-w-xl leading-relaxed font-light animate-fade-up-delay-2 drop-shadow-md">
             Since 2003 we&apos;ve helped over 400 Haldwani families move into
-            thoughtfully planned villas and flats across the city. Every plan
-            is drawn with real families and everyday comfort in mind.
+            thoughtfully planned villas and flats across the city. Every plan is
+            drawn with real families and everyday comfort in mind.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-6 animate-fade-up-delay-2">
