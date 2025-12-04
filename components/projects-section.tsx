@@ -10,9 +10,8 @@ export async function ProjectsSection() {
   const featuredProperties = properties.filter(
     (property) => property.isOnHomePage
   );
-  const propertiesToDisplay = (featuredProperties.length
-    ? featuredProperties
-    : properties
+  const propertiesToDisplay = (
+    featuredProperties.length ? featuredProperties : properties
   ).slice(0, 6);
 
   return (
