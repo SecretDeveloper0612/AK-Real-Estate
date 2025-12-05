@@ -113,7 +113,7 @@ export default function PropertiesClient({
           { label: "Home", href: "/" },
           { label: "Properties", href: "/properties" },
         ]}
-        backgroundImage="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
+        backgroundImage="/images/upcoming_project_2.jpeg"
       />
 
       {/* Filters Section */}

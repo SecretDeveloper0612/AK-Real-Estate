@@ -80,7 +80,7 @@ export default function ContactPage() {
           { label: "Home", href: "/" },
           { label: "Contact", href: "/contact" },
         ]}
-        backgroundImage="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1400&q=80"
+        backgroundImage="/images/upcoming_project_1.jpeg"
       />
 
       {/* Contact Info Cards */}
@@ -276,8 +276,8 @@ export default function ContactPage() {
               {/* Map Placeholder */}
               <div className="aspect-4/3 rounded-2xl overflow-hidden bg-neutral-100 mb-10">
                 <img
-                  src="https://images.unsplash.com/photo-1560184897-6b9a7c2f7c66?auto=format&fit=crop&w=1200&q=80"
-                  alt="AK Tower exterior"
+                  src="/images/layout.png"
+                  alt="AK Tower site layout"
                   className="w-full h-full object-cover"
                 />
               </div>

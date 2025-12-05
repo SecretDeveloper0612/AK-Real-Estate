@@ -9,7 +9,7 @@ export function Hero() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-zoom-slow"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop')`,
+            backgroundImage: "url('/images/upcoming_project_7.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-black/40" />

@@ -59,8 +59,8 @@ export function AboutSection() {
           <div className="relative animate-fade-up-delay-2">
             <div className="aspect-square md:aspect-4/5 rounded-2xl overflow-hidden shadow-2xl shadow-neutral-300/30">
               <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop"
-                alt="Luxury home interior"
+                src="/images/upcoming_project_6.jpg"
+                alt="Upcoming AK villa interior render"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 ease-out"
               />
             </div>

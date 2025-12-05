@@ -92,7 +92,7 @@ export default function AboutPage() {
           { label: "Home", href: "/" },
           { label: "About Us", href: "/about" },
         ]}
-        backgroundImage="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
+        backgroundImage="/images/upcoming_project_3.jpeg"
       />
 
       {/* Stats Section */}
@@ -150,8 +150,8 @@ export default function AboutPage() {
             <div className="relative">
               <div className="aspect-4/5 rounded-2xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
-                  alt="AK Real Estate office"
+                  src="/images/whatsapp-20image-202025-11-25-20at-2011.jpeg"
+                  alt="AK Tower exterior in Durga City Centre"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -263,15 +263,15 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <div className="aspect-4/5 rounded-2xl overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop"
-                    alt="Interior"
+                    src="/images/upcoming_project_4.png"
+                    alt="Upcoming villa elevations"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="aspect-square rounded-2xl overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=2070&auto=format&fit=crop"
-                    alt="Kitchen"
+                    src="/images/upcoming_project_6.jpg"
+                    alt="Upcoming project arrival court"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -279,15 +279,15 @@ export default function AboutPage() {
               <div className="space-y-4 mt-8">
                 <div className="aspect-square rounded-2xl overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2070&auto=format&fit=crop"
-                    alt="Bedroom"
+                    src="/images/upcoming_project_7.jpg"
+                    alt="Upcoming hillside apartment cluster"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="aspect-4/5 rounded-2xl overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1584622050111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop"
-                    alt="Bathroom"
+                    src="/images/upcomign_project_5.jpg"
+                    alt="Clubhouse concept render"
                     className="w-full h-full object-cover"
                   />
                 </div>
