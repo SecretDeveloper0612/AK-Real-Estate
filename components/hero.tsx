@@ -18,30 +18,30 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-3 md:px-6 lg:px-12 mt-10 md:mt-0">
+      <div className="relative z-10 container mx-auto px-6 md:px-12 mt-10 md:mt-0">
         <div className="max-w-4xl">
           <div className="animate-fade-up">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-amber-200 animate-pulse" />
-              <span className="text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-amber-100/90 font-medium">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/15 bg-white/5 backdrop-blur-md mb-8">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
+              <span className="text-[10px] md:text-[11px] uppercase tracking-[0.25em] text-amber-50 font-semibold">
                 Since 2003 · Haldwani
               </span>
             </div>
           </div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-[5.5rem] font-serif text-white leading-[1.1] md:leading-[1.05] mb-6 md:mb-8 animate-fade-up-delay-1 drop-shadow-lg">
-            <span className="italic font-light text-neutral-200 block mb-2">
+          <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-serif text-white leading-[1.1] md:leading-[1.05] mb-8 md:mb-10 animate-fade-up-delay-1 drop-shadow-2xl">
+            <span className="italic font-light text-neutral-300 block mb-2 opacity-90">
               AK Real Estate
             </span>
-            <span className="font-medium block">Villas & Flats</span>
-            <span className="font-medium block text-white/90">
+            <span className="font-medium block tracking-tight">Villas & Flats</span>
+            <span className="font-medium block text-white/95">
               Crafted for Haldwani
             </span>
           </h1>
 
-          <p className="text-base md:text-xl text-neutral-200 mb-8 md:mb-12 max-w-xl leading-relaxed font-light animate-fade-up-delay-2 drop-shadow-md">
+          <p className="text-lg md:text-2xl text-neutral-200 mb-10 md:mb-14 max-w-2xl leading-relaxed font-light animate-fade-up-delay-2 drop-shadow-xl">
             Since 2003 we&apos;ve helped over 400 Haldwani families move into
-            thoughtfully planned villas and flats across the city. Every plan is
+            thoughtfully planned villas and flats. Every plan is
             drawn with real families and everyday comfort in mind.
           </p>
 

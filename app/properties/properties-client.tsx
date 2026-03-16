@@ -202,47 +202,63 @@ export default function PropertiesClient({
 
           {/* Mobile Filters Dropdown */}
           {showFilters && (
-            <div className="lg:hidden mt-4 p-4 bg-neutral-50 rounded-2xl space-y-4 animate-fade-in">
-              <select
-                value={selectedType}
-                onChange={(e) => setSelectedType(e.target.value)}
-                className="w-full px-4 py-3 bg-white border border-neutral-200 rounded-xl text-[14px]"
-              >
-                {propertyTypes.map((type) => (
-                  <option key={type} value={type}>
-                    {type === "All" ? "All Types" : type}
-                  </option>
-                ))}
-              </select>
-              <select
-                value={selectedStatus}
-                onChange={(e) => setSelectedStatus(e.target.value)}
-                className="w-full px-4 py-3 bg-white border border-neutral-200 rounded-xl text-[14px]"
-              >
-                {statusOptions.map((status) => (
-                  <option key={status} value={status}>
-                    {status === "All" ? "All Status" : status}
-                  </option>
-                ))}
-              </select>
-              <select
-                value={selectedCity}
-                onChange={(e) => setSelectedCity(e.target.value)}
-                className="w-full px-4 py-3 bg-white border border-neutral-200 rounded-xl text-[14px]"
-              >
-                {cities.map((city) => (
-                  <option key={city} value={city}>
-                    {city === "All" ? "All Cities" : city}
-                  </option>
-                ))}
-              </select>
+            <div className="lg:hidden mt-6 p-6 bg-neutral-50 rounded-3xl border border-neutral-200/60 space-y-6 animate-fade-in shadow-xl shadow-neutral-200/40">
+              <div className="space-y-4">
+                <div className="flex flex-col gap-2">
+                  <label className="text-[11px] uppercase tracking-wider text-neutral-400 font-semibold px-1">Property Type</label>
+                  <select
+                    value={selectedType}
+                    onChange={(e) => setSelectedType(e.target.value)}
+                    className="w-full px-5 py-3.5 bg-white border border-neutral-200 rounded-2xl text-[14px] focus:outline-none focus:border-neutral-400"
+                  >
+                    {propertyTypes.map((type) => (
+                      <option key={type} value={type}>
+                        {type === "All" ? "All Types" : type}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label className="text-[11px] uppercase tracking-wider text-neutral-400 font-semibold px-1">Status</label>
+                  <select
+                    value={selectedStatus}
+                    onChange={(e) => setSelectedStatus(e.target.value)}
+                    className="w-full px-5 py-3.5 bg-white border border-neutral-200 rounded-2xl text-[14px] focus:outline-none focus:border-neutral-400"
+                  >
+                    {statusOptions.map((status) => (
+                      <option key={status} value={status}>
+                        {status === "All" ? "All Status" : status}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label className="text-[11px] uppercase tracking-wider text-neutral-400 font-semibold px-1">City</label>
+                  <select
+                    value={selectedCity}
+                    onChange={(e) => setSelectedCity(e.target.value)}
+                    className="w-full px-5 py-3.5 bg-white border border-neutral-200 rounded-2xl text-[14px] focus:outline-none focus:border-neutral-400"
+                  >
+                    {cities.map((city) => (
+                      <option key={city} value={city}>
+                        {city === "All" ? "All Cities" : city}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+
               {hasActiveFilters && (
-                <button
+                <Button
                   onClick={clearFilters}
-                  className="w-full py-3 text-[14px] text-neutral-500 hover:text-neutral-900 transition-colors"
+                  variant="ghost"
+                  className="w-full py-6 text-[14px] text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100 rounded-2xl transition-all"
                 >
+                  <X className="w-4 h-4 mr-2" />
                   Clear All Filters
-                </button>
+                </Button>
               )}
             </div>
           )}

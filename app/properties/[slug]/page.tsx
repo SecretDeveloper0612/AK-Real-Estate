@@ -294,6 +294,33 @@ export default async function PropertyDetailPage({
                   </span>
                 </div>
               )}
+
+              {/* Location Map */}
+              <div className="mt-10">
+                <h2 className="text-xl font-serif font-medium text-neutral-900 mb-6">
+                  Location & Surroundings
+                </h2>
+                <div className="aspect-video w-full rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100 shadow-sm relative group">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    loading="lazy"
+                    allowFullScreen
+                    src={`https://maps.google.com/maps?q=${encodeURIComponent(
+                      property.location + ", " + property.city
+                    )}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
+                    className="w-full h-full"
+                  ></iframe>
+                </div>
+                <div className="mt-4 flex items-start gap-3 p-4 bg-emerald-50/50 rounded-xl border border-emerald-100">
+                  <MapPin className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+                  <p className="text-[14px] text-neutral-700 leading-relaxed">
+                    This property is located in the premium <span className="font-semibold">{property.location}</span> area of {property.city}. 
+                    It offers excellent connectivity to major landmarks and everyday essentials.
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Sidebar */}

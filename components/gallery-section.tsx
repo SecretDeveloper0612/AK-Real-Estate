@@ -81,14 +81,14 @@ export function GallerySection() {
           light
         />
 
-        <div className="flex justify-center gap-3 mb-14">
+        <div className="flex overflow-x-auto pb-4 mb-10 no-scrollbar md:justify-center gap-3 snap-x">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-6 py-2.5 rounded-full text-[13px] font-medium tracking-wide transition-all duration-300 ${
+              className={`px-6 py-2.5 rounded-full text-[13px] font-medium tracking-wide transition-all duration-300 whitespace-nowrap snap-start ${
                 activeCategory === category
-                  ? "bg-white text-neutral-900"
+                  ? "bg-white text-neutral-900 shadow-lg shadow-white/10"
                   : "bg-neutral-800/50 text-neutral-400 hover:bg-neutral-800 hover:text-neutral-300"
               }`}
             >

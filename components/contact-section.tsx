@@ -172,12 +172,16 @@ export function ContactSection() {
               ))}
             </div>
 
-            <div className="mt-10 aspect-video rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200/60">
-              <img
-                src="/minimal-google-maps-style-map-beverly-hills.jpg"
-                alt="Map showing AK Tower in Haldwani"
-                className="w-full h-full object-cover"
-              />
+            <div className="mt-10 aspect-video rounded-xl overflow-hidden border border-neutral-200/60 shadow-inner">
+              <iframe
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                allowFullScreen
+                src="https://maps.google.com/maps?q=AK%20Tower,%20Durga%20City%20Centre,%20Haldwani&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                className="w-full h-full"
+              ></iframe>
             </div>
           </div>
         </div>

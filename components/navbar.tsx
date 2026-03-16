@@ -76,29 +76,53 @@ export function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 z-40 bg-neutral-950 flex flex-col pt-24 px-6 pb-8 animate-fade-in">
-          <nav className="flex flex-col gap-6 items-center justify-center h-full">
-            {navLinks.map((link) => (
+      {/* Mobile Menu Overlay */}
+      <div
+        className={`lg:hidden fixed inset-0 z-50 bg-neutral-950 transition-all duration-500 ease-in-out ${
+          isMobileMenuOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+        }`}
+      >
+        <div className="flex flex-col h-full pt-24 px-8 pb-12">
+          <nav className="flex flex-col gap-8 items-start justify-center flex-grow">
+            {navLinks.map((link, index) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-2xl md:text-3xl text-white hover:text-neutral-400 transition-colors font-serif font-medium"
+                className={`text-4xl font-serif font-medium text-white hover:text-neutral-400 transition-all duration-300 transform ${
+                  isMobileMenuOpen
+                    ? "translate-y-0 opacity-100"
+                    : "translate-y-8 opacity-0"
+                }`}
+                style={{ transitionDelay: `${index * 100}ms` }}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}
               </Link>
             ))}
+          </nav>
+          
+          <div className={`mt-12 transition-all duration-500 delay-500 transform ${
+            isMobileMenuOpen ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+          }`}>
             <Button
               asChild
-              className="mt-8 bg-white text-neutral-900 hover:bg-neutral-200 rounded-full px-8 py-6 text-lg w-full max-w-xs"
+              className="w-full bg-white text-neutral-900 hover:bg-neutral-200 rounded-full py-7 text-lg font-medium"
             >
-              <Link href="/contact">Schedule a Tour</Link>
+              <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                Schedule a Tour
+              </Link>
             </Button>
-          </nav>
+            
+            <div className="mt-10 pt-10 border-t border-white/10 flex flex-col gap-4">
+              <p className="text-neutral-500 text-sm tracking-widest uppercase">Contact</p>
+              <a href="tel:9837067289" className="text-white text-lg">+91 98370 67289</a>
+              <a href="mailto:anil2494@gmail.com" className="text-white text-lg">anil2494@gmail.com</a>
+            </div>
+          </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }
