@@ -5,10 +5,9 @@ const token = process.env.HYGRAPH_TOKEN;
 
 export const isHygraphConfigured = !!(endpoint && token);
 
-if (!isHygraphConfigured) {
-  console.warn(
-    "Warning: HYGRAPH_ENDPOINT or HYGRAPH_TOKEN is not defined in environment variables. Hygraph data will not be available."
-  );
+// Note: We use mock data as a fallback in lib/properties-data.ts if this is null.
+if (!isHygraphConfigured && process.env.NODE_ENV !== "production") {
+  console.log("Hygraph: Using mock data fallback (Keys not found in .env)");
 }
 
 export const hygraphClient = isHygraphConfigured
