@@ -25,7 +25,6 @@ export async function ProjectsSection() {
                 key={property.id}
                 title={property.title}
                 location={property.location}
-                price={property.price}
                 beds={property.beds}
                 baths={property.baths}
                 sqft={property.sqft}

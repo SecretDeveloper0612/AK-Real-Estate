@@ -328,14 +328,7 @@ export default async function PropertyDetailPage({
               <div className="sticky top-28">
                 {/* Price Card */}
                 <div className="bg-white border border-neutral-200 rounded-2xl p-8 mb-6 shadow-lg shadow-neutral-200/30">
-                  <div className="mb-6">
-                    <span className="text-[13px] text-neutral-500 uppercase tracking-wider">
-                      Starting Price
-                    </span>
-                    <div className="text-4xl font-serif font-semibold text-neutral-900 mt-1">
-                      {property.price}
-                    </div>
-                  </div>
+
 
                   <div className="space-y-3 mb-8">
                     <Link
@@ -447,9 +440,6 @@ export default async function PropertyDetailPage({
                       <span className="text-[13px]">{prop.location}</span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-xl font-serif font-semibold text-neutral-900">
-                        {prop.price}
-                      </span>
                       <span className="text-[12px] text-neutral-500">
                         {prop.beds} Beds • {prop.sqft}
                       </span>

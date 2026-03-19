@@ -263,8 +263,8 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <div className="aspect-4/5 rounded-2xl overflow-hidden">
                   <img
-                    src="/images/upcoming_project_4.png"
-                    alt="Upcoming villa elevations"
+                    src="/images/upcoming_project_1.jpeg"
+                    alt="Premium villa concept elevations"
                     className="w-full h-full object-cover"
                   />
                 </div>

@@ -18,7 +18,7 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 md:px-12 mt-10 md:mt-0">
+      <div className="relative z-10 container mx-auto px-6 md:px-12 mt-36 md:mt-0">
         <div className="max-w-4xl">
           <div className="animate-fade-up">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/15 bg-white/5 backdrop-blur-md mb-8">

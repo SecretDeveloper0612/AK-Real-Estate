@@ -34,11 +34,7 @@ const galleryImages = [
     alt: "Upcoming elevations at Durga City Centre",
     category: "Upcoming",
   },
-  {
-    src: "/images/upcoming_project_4.png",
-    alt: "Upcoming villa cluster render",
-    category: "Upcoming",
-  },
+
   {
     src: "/images/upcoming_project_6.jpg",
     alt: "Upcoming lakeside residence",

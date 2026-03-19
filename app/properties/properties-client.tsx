@@ -326,7 +326,7 @@ export default function PropertiesClient({
                       <span className="text-[13px]">{property.location}</span>
                     </div>
 
-                    <div className="flex items-center gap-5 text-[13px] text-neutral-500 mb-5 pb-5 border-b border-neutral-100">
+                    <div className="flex items-center gap-5 text-[13px] text-neutral-500 pb-5 border-b border-neutral-100">
                       <div className="flex items-center gap-1.5">
                         <Bed className="w-4 h-4" strokeWidth={1.5} />
                         <span>{property.beds} Beds</span>
@@ -339,15 +339,6 @@ export default function PropertiesClient({
                         <Square className="w-4 h-4" strokeWidth={1.5} />
                         <span>{property.sqft}</span>
                       </div>
-                    </div>
-
-                    <div className="flex items-center justify-between">
-                      <span className="text-2xl font-serif font-semibold text-neutral-900">
-                        {property.price}
-                      </span>
-                      <span className="text-[11px] text-neutral-400 uppercase tracking-wider font-medium">
-                        Starting Price
-                      </span>
                     </div>
                   </div>
                 </Link>
