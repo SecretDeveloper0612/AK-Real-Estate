@@ -20,6 +20,81 @@ const galleryImages = [
     category: "Completed",
   },
   {
+    src: "/images/completed_project_4.jpeg",
+    alt: "Spacious living area with TV unit",
+    category: "Completed",
+  },
+  {
+    src: "/images/completed_project_5.jpeg",
+    alt: "Elegant living lounge with fancy lighting",
+    category: "Completed",
+  },
+  {
+    src: "/images/completed_project_6.jpeg",
+    alt: "Modern TV unit with marble finish",
+    category: "Completed",
+  },
+  {
+    src: "/images/completed_project_7.jpeg",
+    alt: "Modern modular kitchen design",
+    category: "Completed",
+  },
+  {
+    src: "/images/completed_project_8.jpeg",
+    alt: "Premium bathroom with modern fixtures",
+    category: "Completed",
+  },
+  {
+    src: "/images/completed_project_13.jpeg",
+    alt: "Contemporary villa front facade",
+    category: "Completed",
+  },
+  {
+    src: "/images/completed_project_11.jpeg",
+    alt: "Beautifully carved puja entrance",
+    category: "Completed",
+  },
+  {
+    src: "/images/completed_project_9.jpeg",
+    alt: "Artistic staircase with wall art",
+    category: "Completed",
+  },
+  {
+    src: "/images/completed_project_10.jpeg",
+    alt: "Premium kitchen cabinetry and task lighting",
+    category: "Completed",
+  },
+  {
+    src: "/images/completed_project_12.jpeg",
+    alt: "Finished staircase with steel railing",
+    category: "Completed",
+  },
+  {
+    src: "/images/completed_project_14.jpeg",
+    alt: "Spacious master bedroom interior",
+    category: "Completed",
+  },
+  {
+    src: "/images/completed_project_15.jpeg",
+    alt: "Modern kitchen with glass display cabinet",
+    category: "Completed",
+  },
+  {
+    src: "/images/completed_project_17.jpeg",
+    alt: "Zen-inspired indoor planter area under stairs",
+    category: "Completed",
+  },
+  {
+    src: "/images/completed_project_16.jpeg",
+    alt: "Luxury marble pattern wall decoration",
+    category: "Completed",
+  },
+  {
+    src: "/images/completed_project_18.jpeg",
+    alt: "Contemporary entrance gate and facade",
+    category: "Completed",
+  },
+  {
     src: "/images/upcoming_project_1.jpeg",
     alt: "Upcoming Skyview Residences tower",
     category: "Upcoming",
