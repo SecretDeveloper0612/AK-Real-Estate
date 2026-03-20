@@ -150,10 +150,24 @@ export function Footer() {
       <div className="border-t border-neutral-900 relative z-10">
         <div className="container mx-auto px-6 lg:px-12 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-[12px] text-neutral-500 font-light tracking-wide">
-            <p>
-              &copy; {new Date().getFullYear()} AK Real Estate. All rights
-              reserved.
-            </p>
+            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+              <p>
+                &copy; {new Date().getFullYear()} AK Real Estate. All rights
+                reserved.
+              </p>
+              <span className="hidden md:inline text-neutral-800">|</span>
+              <p>
+                Developed By{" "}
+                <a
+                  href="https://preettech.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white transition-colors"
+                >
+                  Preet Tech
+                </a>
+              </p>
+            </div>
             <div className="flex gap-8">
               <Link href="#" className="hover:text-white transition-colors">
                 Privacy Policy

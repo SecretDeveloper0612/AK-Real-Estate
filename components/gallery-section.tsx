@@ -95,11 +95,6 @@ const galleryImages = [
     category: "Completed",
   },
   {
-    src: "/images/upcoming_project_1.jpeg",
-    alt: "Upcoming Skyview Residences tower",
-    category: "Upcoming",
-  },
-  {
     src: "/images/upcoming_project_2.jpeg",
     alt: "Upcoming courtyard block",
     category: "Upcoming",

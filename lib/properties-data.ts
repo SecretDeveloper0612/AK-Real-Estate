@@ -75,7 +75,7 @@ const MOCK_PROPERTIES: Property[] = [
     status: "coming-soon",
     type: "villa",
     image: "/images/upcoming_project_2.jpeg",
-    images: ["/images/upcoming_project_2.jpeg", "/images/upcoming_project_1.jpeg"],
+    images: ["/images/upcoming_project_2.jpeg"],
     description: "Nestled in the serene outskirts of Kathgodam, this upcoming villa offers breathtaking hill views and a peaceful environment. Designed for luxury and tranquility.",
     features: ["Private Garden", "Rooftop Terrace", "Walk-in Closets", "Natural Stone Flooring", "Home Theater Room"],
     amenities: ["Gated Community", "Clubhouse Access", "Swimming Pool", "Landscaped Gardens", "Solar Power"],

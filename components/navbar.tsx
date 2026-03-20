@@ -37,7 +37,7 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 transition-all duration-500 ease-out ${
+      className={`absolute top-0 left-0 right-0 transition-all duration-500 ease-out ${
         isMobileMenuOpen
           ? "bg-neutral-950 z-[70] py-4"
           : isScrolled
